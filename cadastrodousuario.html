@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/cadastrodeusuario.css">
+    <title>Cadastro de Usuário</title>
+</head>
+<body>
+     
+     
+     <div id="conteudo-principal">
+        <h1>Cadastre-se para fazer a sua encomenda</h1>
+         <form id="registrar-usuario" action="">
+             <div class="meia-caixa espaçada">
+                 <label for="name">Nome:</label>
+                 <input type="text" nome="name" id="nome" placeholder="Digite seu nome" data-required data-min-length="3" data-max-length="16">
+             </div>
+             <div class="meia-caixa">
+                 <label for="lastname">Sobrenome:</label>
+                 <input type="text" name="lastname" id="sobrenome" placeholder="Digite seu sobrenome" data-required data-only-letters>
+             </div>
+             <div class="meia-caixa espaçada">
+                 <label for="date">Data de Nascimento:</label>
+                 <input type="date" id="datadenascimento">
+             </div>
+             <div class="meia-caixa">
+                 <label for="tel">Telefone de Contato:</label>
+                 <input type="text" id="telefone" placeholder="Digite seu telefone">
+             </div>
+             <div class="caixa-cheia">
+                 <label for="email">E-mail:</label>
+                 <input type="email" name="email" id="email" placeholder="Digite seu e-mail" data-min-length="2" data-email-validate>
+             </div>
+             <div class="meia-caixa espaçada">
+                 <label for="password">Senha:</label>
+                 <input type="password" name="password" id="password" placeholder="Digite sua senha" data-password-validate data-required>
+             </div>
+             <div class="meia-caixa">
+                 <label for="passconfirmation">Confirmação de Senha:</label>
+                 <input type="password" name="passconfirmation" id="passwordconfirmation" placeholder="Digite novamente sua senha" data-equal="password">
+             </div>
+             <div>
+                <label for="notification" id="notification-label">Receber Notificações de Promoção?</label>
+                <input type="radio" name="notification" class="notification">Sim
+                <input type="radio" name="notification" class="notification">Não
+             </div>
+             <div class="caixa-cheia">
+                <input id="btn-submit" type="submit" value="Registrar">
+              </div>
+         </form>
+     </div>
+
+     <p class="error-validation template"></p>
+  <script src="./javascript/script.js"></script>
+
+
+
+</body>
+</html>
